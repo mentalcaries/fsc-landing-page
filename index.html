@@ -129,6 +129,13 @@
       padding: 0 2.5rem;
     }
 
+    .hero-topo {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
     .hero-wrap::before {
       content: '';
       position: absolute;
@@ -150,6 +157,8 @@
       background: radial-gradient(ellipse, rgba(30, 143, 255, 0.08) 0%, transparent 65%);
       pointer-events: none;
     }
+
+
 
     .hero {
       position: relative;
@@ -574,6 +583,13 @@
       .product {
         grid-template-columns: 1fr;
         gap: 0.5rem;
+        text-align: center;
+        max-width: 480px;
+        margin: 0 auto;
+      }
+
+      .product-group {
+        margin: 0 auto;
       }
 
 
@@ -630,6 +646,55 @@
   </nav>
 
   <div class="hero-wrap">
+    <svg class="hero-topo" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="bgGlow" cx="22%" cy="48%" r="52%">
+          <stop offset="0%" stop-color="#1e8fff" stop-opacity="0.12" />
+          <stop offset="55%" stop-color="#0a4fd4" stop-opacity="0.05" />
+          <stop offset="100%" stop-color="#0a4fd4" stop-opacity="0" />
+        </radialGradient>
+        <radialGradient id="bgGlow2" cx="70%" cy="28%" r="38%">
+          <stop offset="0%" stop-color="#1e8fff" stop-opacity="0.07" />
+          <stop offset="100%" stop-color="#1e8fff" stop-opacity="0" />
+        </radialGradient>
+      </defs>
+      <rect width="900" height="520" fill="url(#bgGlow)" />
+      <rect width="900" height="520" fill="url(#bgGlow2)" />
+      <g opacity="0.18" transform="translate(480,80) scale(1.3)">
+        <path
+          d="M60,20 C95,10 155,8 195,18 C230,26 260,40 275,58 C290,76 285,95 270,112 C255,128 235,138 210,148 C188,157 165,162 145,168 C122,175 98,180 75,175 C52,170 30,158 18,140 C6,122 4,98 12,76 C20,54 35,32 60,20Z"
+          fill="none" stroke="#0a4fd4" stroke-width="1.2" />
+        <path
+          d="M70,32 C100,24 148,22 182,32 C212,40 238,56 250,72 C260,86 256,103 244,116 C230,130 212,138 192,146 C172,153 150,157 130,162 C110,167 88,170 68,164 C50,158 34,146 24,130 C14,114 14,92 22,72 C32,52 46,40 70,32Z"
+          fill="none" stroke="#0a4fd4" stroke-width="0.9" stroke-dasharray="3,3" />
+        <path
+          d="M82,46 C108,40 148,38 174,48 C198,56 218,70 226,86 C232,98 228,112 218,122 C206,134 190,140 172,146 C154,151 134,154 116,157 C98,160 80,161 64,155 C50,150 38,138 32,124 C26,108 28,88 36,70 C46,52 58,52 82,46Z"
+          fill="none" stroke="#0a4fd4" stroke-width="0.6" stroke-dasharray="2,4" />
+        <path
+          d="M94,62 C116,58 146,57 166,66 C184,74 198,88 202,102 C206,114 202,126 194,134 C184,143 170,147 154,151 C138,154 120,155 104,152 C90,148 78,138 72,124 C66,110 68,92 76,78 C84,64 90,66 94,62Z"
+          fill="none" stroke="#1e8fff" stroke-width="0.5" stroke-dasharray="1,5" opacity="0.7" />
+        <path d="M60,38 C80,30 110,28 140,32 C165,35 188,44 200,56" fill="none" stroke="#1e8fff" stroke-width="1.0"
+          opacity="0.5" />
+        <g transform="translate(212,-18) rotate(-20)">
+          <ellipse cx="30" cy="12" rx="26" ry="10" fill="none" stroke="#0a4fd4" stroke-width="1.0" />
+          <ellipse cx="30" cy="12" rx="18" ry="6" fill="none" stroke="#0a4fd4" stroke-width="0.6"
+            stroke-dasharray="2,3" />
+        </g>
+      </g>
+      <g opacity="0.035" stroke="#0a4fd4" stroke-width="0.5">
+        <line x1="0" y1="87" x2="900" y2="87" />
+        <line x1="0" y1="174" x2="900" y2="174" />
+        <line x1="0" y1="261" x2="900" y2="261" />
+        <line x1="0" y1="348" x2="900" y2="348" />
+        <line x1="0" y1="435" x2="900" y2="435" />
+        <line x1="150" y1="0" x2="150" y2="520" />
+        <line x1="300" y1="0" x2="300" y2="520" />
+        <line x1="450" y1="0" x2="450" y2="520" />
+        <line x1="600" y1="0" x2="600" y2="520" />
+        <line x1="750" y1="0" x2="750" y2="520" />
+      </g>
+    </svg>
     <div class="hero">
       <span class="hero-eyebrow">Full Stack Collective</span>
       <h1>Software built for<br /><span class="gradient-text">uncomplicating</span><br />real problems.</h1>
